@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="IArtificial" Database="">
+  <Project Name="8Puzle" Path="8Puzle/8Puzle.project" Active="Yes"/>
+  <Project Name="TicTacToe" Path="TicTacToe/TicTacToe.project"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="8Puzle" ConfigName="Debug"/>
+      <Project Name="TicTacToe" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="8Puzle" ConfigName="Release"/>
+      <Project Name="TicTacToe" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
