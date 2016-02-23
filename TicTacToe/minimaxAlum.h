@@ -1,6 +1,6 @@
 /***************************************************************************
 * Name:		TicTacToe
-* FileName:	main.c
+* FileName:	minimaxAlum.h
 *
 * Author:	Jose M Barba Gonzalez
 * Created:	19/02/16 - vie febrero 19 17:52:48 2016
@@ -27,54 +27,44 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
+/********************************************/
+/*				minimaxAlum.h				*/
+/*			Estrategia MiniMax				*/
+/*											*/
+/*	Asignatura: Inteligencia Artificial		*/
+/*	Grado en Ingenieria Informatica - UCA	*/
+/********************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
-#include "tictactoe.h"
-#include "minimaxAlum.h"
+#include <string.h>
+#include <limits.h>
 
-int main(int argc, char **argv)
-{
-	printf("Ejercicio TicTacToe.\n");
-	int jugador;  //+1 o -1
-	int primero,ganador;
-	tNodo *juego = crearNodo(tablero_inicial);
-	dispNodo(juego);
+tNodo *jugadaAdversario(tNodo *t);
 
-	printf("El Agente Inteligente juega con X \n El Jugador Humano con O \n Elige el turno 1:Primero o 2:Segundo ");
-	scanf("%d",&primero);
-	printf("\n");
+tNodo *PSEUDOminimax(tNodo *Nodo);
 
-	if(primero == 1)
-		jugador = -1; //Turno de Min
-	else
-		jugador = 1; //Turno de Max
+tNodo *MinMax(tNodo *nodo, int jugador);
 
-	ganador = terminal(juego,jugador);
+int valorMin(tNodo *nodo);
 
-	while(juego->vacias > 0 && ganador == 0)
-	{
-		if(jugador == 1)
-			juego = (tNodo *) PSEUDOminimax(juego);
-		else
-			juego = (tNodo *) jugadaAdversario(juego);
+int valorMax(tNodo *nodo);
 
-		dispNodo(juego);
-		ganador = terminal(juego,jugador);
-		jugador = opuesto(jugador);//turno del adversario
-	}
+int min(int valor1, int valor2);
 
-	switch(ganador)
-	{
-		case 100:
-			printf("\n HE GANADOOOO\n");
-			break;
-		case 0:
-			printf("\n EMPATE\n");
-			break;
-		case -100:
-			printf("\n Increible pero has ganado tu :(( \n\n");
-			break;
-		default: printf("\n algo ha salido mal en el juego ..\n");
-	}
-	return 0;
-}
+int max(int valor1, int valor2);
+
+//heuristica
+//Precondiciones: recibe un tNodo de un tablero para
+//      comprobar que jugada es la mejor del agente inteligente.
+//poscondiciones: devuelve 1 si la mejor jugada es la
+//      de maximo, y 0 en caso contrario.
+int utilidad(tNodo *nodo);
+
+/***********************************************/
+
+tNodo *poda_ab(tNodo *nodo, int jugador);
+
+int valorMin_ab(tNodo *nodo, int jugador, int prof, int alfa, int beta);
+
+int valorMax_ab(tNodo *nodo, int jugador, int prof, int alfa, int beta);

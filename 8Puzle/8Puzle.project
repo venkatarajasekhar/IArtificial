@@ -92,5 +92,12 @@
   </Settings>
   <VirtualDirectory Name="src">
     <File Name="main.c"/>
+    <File Name="busqueda.c"/>
+    <File Name="busqueda.h"/>
+    <File Name="listaia.h"/>
+    <File Name="listaia.c"/>
+    <File Name="nodo.h"/>
+    <File Name="puzle.h"/>
+    <File Name="puzle.c"/>
   </VirtualDirectory>
 </CodeLite_Project>

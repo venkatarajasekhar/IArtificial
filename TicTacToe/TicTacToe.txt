@@ -1,0 +1,1 @@
+./Debug/main.c.o ./Debug/minimaxAlum.c.o ./Debug/podaAB.c.o ./Debug/tictactoe.c.o

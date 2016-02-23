@@ -3,17 +3,17 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=8Puzle
+ProjectName            :=TicTacToe
 ConfigurationName      :=Debug
 WorkspacePath          := "/home/zerokullneo/github/codelite/IArtificial"
-ProjectPath            := "/home/zerokullneo/github/codelite/IArtificial/8Puzle"
+ProjectPath            := "/home/zerokullneo/github/codelite/IArtificial/TicTacToe"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jose M Barba Gonzalez
-Date                   :=22/02/16
+Date                   :=23/02/16
 CodeLitePath           :="/home/zerokullneo/.codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -32,7 +32,7 @@ Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
-ObjectsFileList        :="8Puzle.txt"
+ObjectsFileList        :="TicTacToe.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/busqueda.c$(ObjectSuffix) $(IntermediateDirectory)/listaia.c$(ObjectSuffix) $(IntermediateDirectory)/puzle.c$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/minimaxAlum.c$(ObjectSuffix) $(IntermediateDirectory)/podaAB.c$(ObjectSuffix) $(IntermediateDirectory)/tictactoe.c$(ObjectSuffix) 
 
 
 
@@ -92,36 +92,36 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/zerokullneo/github/codelite/IArtificial/8Puzle/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "/home/zerokullneo/github/codelite/IArtificial/TicTacToe/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.c$(DependSuffix): main.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM "main.c"
 
 $(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) "main.c"
 
-$(IntermediateDirectory)/busqueda.c$(ObjectSuffix): busqueda.c $(IntermediateDirectory)/busqueda.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/zerokullneo/github/codelite/IArtificial/8Puzle/busqueda.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/busqueda.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/busqueda.c$(DependSuffix): busqueda.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/busqueda.c$(ObjectSuffix) -MF$(IntermediateDirectory)/busqueda.c$(DependSuffix) -MM "busqueda.c"
+$(IntermediateDirectory)/minimaxAlum.c$(ObjectSuffix): minimaxAlum.c $(IntermediateDirectory)/minimaxAlum.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/home/zerokullneo/github/codelite/IArtificial/TicTacToe/minimaxAlum.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/minimaxAlum.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/minimaxAlum.c$(DependSuffix): minimaxAlum.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/minimaxAlum.c$(ObjectSuffix) -MF$(IntermediateDirectory)/minimaxAlum.c$(DependSuffix) -MM "minimaxAlum.c"
 
-$(IntermediateDirectory)/busqueda.c$(PreprocessSuffix): busqueda.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/busqueda.c$(PreprocessSuffix) "busqueda.c"
+$(IntermediateDirectory)/minimaxAlum.c$(PreprocessSuffix): minimaxAlum.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/minimaxAlum.c$(PreprocessSuffix) "minimaxAlum.c"
 
-$(IntermediateDirectory)/listaia.c$(ObjectSuffix): listaia.c $(IntermediateDirectory)/listaia.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/zerokullneo/github/codelite/IArtificial/8Puzle/listaia.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/listaia.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/listaia.c$(DependSuffix): listaia.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/listaia.c$(ObjectSuffix) -MF$(IntermediateDirectory)/listaia.c$(DependSuffix) -MM "listaia.c"
+$(IntermediateDirectory)/podaAB.c$(ObjectSuffix): podaAB.c $(IntermediateDirectory)/podaAB.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/home/zerokullneo/github/codelite/IArtificial/TicTacToe/podaAB.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/podaAB.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/podaAB.c$(DependSuffix): podaAB.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/podaAB.c$(ObjectSuffix) -MF$(IntermediateDirectory)/podaAB.c$(DependSuffix) -MM "podaAB.c"
 
-$(IntermediateDirectory)/listaia.c$(PreprocessSuffix): listaia.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/listaia.c$(PreprocessSuffix) "listaia.c"
+$(IntermediateDirectory)/podaAB.c$(PreprocessSuffix): podaAB.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/podaAB.c$(PreprocessSuffix) "podaAB.c"
 
-$(IntermediateDirectory)/puzle.c$(ObjectSuffix): puzle.c $(IntermediateDirectory)/puzle.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/zerokullneo/github/codelite/IArtificial/8Puzle/puzle.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/puzle.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/puzle.c$(DependSuffix): puzle.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/puzle.c$(ObjectSuffix) -MF$(IntermediateDirectory)/puzle.c$(DependSuffix) -MM "puzle.c"
+$(IntermediateDirectory)/tictactoe.c$(ObjectSuffix): tictactoe.c $(IntermediateDirectory)/tictactoe.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/home/zerokullneo/github/codelite/IArtificial/TicTacToe/tictactoe.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/tictactoe.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/tictactoe.c$(DependSuffix): tictactoe.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/tictactoe.c$(ObjectSuffix) -MF$(IntermediateDirectory)/tictactoe.c$(DependSuffix) -MM "tictactoe.c"
 
-$(IntermediateDirectory)/puzle.c$(PreprocessSuffix): puzle.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/puzle.c$(PreprocessSuffix) "puzle.c"
+$(IntermediateDirectory)/tictactoe.c$(PreprocessSuffix): tictactoe.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/tictactoe.c$(PreprocessSuffix) "tictactoe.c"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

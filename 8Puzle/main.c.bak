@@ -1,0 +1,16 @@
+
+
+/**
+ * @brief 
+ * @param argc
+ * @param argv
+ * @return 
+ */
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{
+	printf("Ejercicio 8 Puzle.\n");
+
+	return 0;
+}

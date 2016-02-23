@@ -92,5 +92,10 @@
   </Settings>
   <VirtualDirectory Name="src">
     <File Name="main.c"/>
+    <File Name="minimaxAlum.c"/>
+    <File Name="minimaxAlum.h"/>
+    <File Name="podaAB.c"/>
+    <File Name="tictactoe.h"/>
+    <File Name="tictactoe.c"/>
   </VirtualDirectory>
 </CodeLite_Project>

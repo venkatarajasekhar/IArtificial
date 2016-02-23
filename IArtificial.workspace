@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="IArtificial" Database="">
-  <Project Name="8Puzle" Path="8Puzle/8Puzle.project" Active="Yes"/>
-  <Project Name="TicTacToe" Path="TicTacToe/TicTacToe.project"/>
+  <Project Name="8Puzle" Path="8Puzle/8Puzle.project" Active="No"/>
+  <Project Name="TicTacToe" Path="TicTacToe/TicTacToe.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

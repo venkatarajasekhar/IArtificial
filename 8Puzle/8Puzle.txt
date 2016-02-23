@@ -1,1 +1,1 @@
-./Debug/main.c.o
+./Debug/main.c.o ./Debug/busqueda.c.o ./Debug/listaia.c.o ./Debug/puzle.c.o
