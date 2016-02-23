@@ -47,7 +47,9 @@ typedef struct tNodo
 	int vacias;//contador de las posiciones vacías en el tablero
 }tNodo;
 
-static int tablero_inicial[N] = {0,0,0, 0,0,0, 0,0,0};
+static int tablero_inicial[N] = {0,0,0,
+								 0,0,0,
+								 0,0,0};
 
 // las posiciones serán numeradas de 0 a 8 de la siguiente forma:
 //0 1 2
